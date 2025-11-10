@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title id="page-title">فال لسان الغیب </title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-inner">
+    <div class="border-top" aria-hidden="true"></div>
+    <div class="head-row">
+      <h1 id="site-title">فال لسان الغیب</h1>
+      <div class="lang-switch" role="tablist" aria-label="Language switch">
+        <button class="lang-btn" data-lang="fa" aria-pressed="true">FA</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-inner" id="main-content">
+
+    <!-- GUIDE SECTION -->
+    <section id="guide-section" class="guide-box panel" aria-labelledby="guide-title">
+      <h2 id="guide-title" class="guide-title">رازِ فال با شعر</h2>
+
+      <p id="guide-short" class="guide-short">
+        <!-- توسط JS پر می‌شود -->
+      </p>
+
+      <button id="guide-toggle" class="btn secondary" aria-expanded="false" aria-controls="guide-full">بیشتر بدانید</button>
+
+      <div id="guide-full" class="guide-full hidden" tabindex="0" aria-hidden="true">
+        <!-- متن کامل توسط JS پر می‌شود -->
+      </div>
+    </section>
+
+    <!-- NIT SECTION -->
+    <section id="nit-section" class="panel" aria-labelledby="nit-title">
+      <h2 id="nit-title" class="visually-hidden">نیت و دعا</h2>
+      <p id="nit-text" class="nit-text">«ای حافظ شیرازی! تو محرم هر رازی! تو را به خدا و به شاخ نباتت قسم می دهم که هر چه صلاح و مصلحت می بینی برایم آشکار و آرزوی مرا براورده سازی.»</p>
+      <button id="get-fal-btn" class="btn primary" type="button" aria-controls="result-section" aria-expanded="false">نیت کردم و آماده‌ام</button>
+    </section>
+
+    <!-- RESULT SECTION -->
+    <section id="result-section" class="hidden" aria-live="polite" aria-atomic="true" tabindex="-1">
+      <div class="fal-container">
+        <h3 id="fal-title" class="fal-title">فال شما</h3>
+
+        <div class="ghazal-box">
+          <p class="ghazal-intro"><span id="ghazal-intro-label">غزل شماره</span> <span id="ghazal-number">—</span></p>
+          <div id="ghazal-text">متن غزل در اینجا نمایش داده می‌شود.</div>
+        </div>
+
+        <div class="tafsir-box">
+          <h3 id="tafsir-label">تعبیر و تفسیر</h3>
+          <p id="tafsir-text">تعبیر مرتبط با غزل در این قسمت قرار می‌گیرد.</p>
+        </div>
+
+        <div class="share-box">
+          <button id="share-btn" class="btn primary" type="button" aria-haspopup="true" aria-expanded="false">کپی لینک فال</button>
+          <div id="share-feedback" class="share-feedback visually-hidden">لینک کپی شد!</div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <button id="get-new-fal-btn" class="btn secondary" type="button">فال دیگر بگیرم</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center mt-8 text-sm text-gray-500">
+  <p id="creator"></p>
+</footer>
+  <footer class="site-inner">
+    <div class="border-bottom" aria-hidden="true"></div>
+    <p id="footer-text">تمام حقوق محفوظ است</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
